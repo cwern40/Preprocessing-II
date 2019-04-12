@@ -3,16 +3,6 @@
   header {
     .flex(space-between, wrap);
 
-    .nav-bar{
-      border-bottom: 2px dashed @navigation-border;
-      width: 100%;
-      .flex(space-between, wrap);
-
-      h1 {
-        align-self: center;
-      }
-    }
-
     .text-content {
       padding: 15px 0;
       border-bottom: 2px dashed @navigation-border;
@@ -30,11 +20,19 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%
+      }
 
       img {
         border-radius: 10px;
@@ -72,9 +70,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%
+      }
     }
+  }
+
+  button {
+    .btn (@button-bg, @main-bg, 80%, 40px)
   }
 }// home
