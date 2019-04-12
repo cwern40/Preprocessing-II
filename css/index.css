@@ -172,7 +172,9 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-self: center;
   width: 50%;
+  margin: 30px 0;
 }
 nav a {
   text-decoration: none;
@@ -189,6 +191,25 @@ nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home header .nav-bar {
+  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home header .nav-bar h1 {
+  align-self: center;
+}
+.home header .text-content {
+  padding: 15px 0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
