@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 html {
@@ -32,6 +33,10 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+
+  @media @phone {
+    width: 100%;
+  }
 }
 
 img {
@@ -45,6 +50,7 @@ img {
   margin: 0 auto;
 
   @media @phone {
+    width: 100%;
     margin: 0 2%;
   }
 }

@@ -128,6 +128,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  font-weight: 600;
 }
 html {
   font-size: 62.5%;
@@ -159,6 +160,11 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  p {
+    width: 100%;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -170,6 +176,7 @@ img {
 }
 @media (max-width: 500px) {
   .container {
+    width: 100%;
     margin: 0 2%;
   }
 }
@@ -210,7 +217,6 @@ img {
 }
 @media (max-width: 500px) {
   .header .nav-bar nav {
-    max-width: 480px;
     width: 100%;
   }
 }
@@ -268,6 +274,11 @@ header .text-content {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 100%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -301,6 +312,11 @@ header .text-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    width: 100%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -318,6 +334,7 @@ header .text-content {
   .home .content-pick {
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 }
 .home .content-pick .destination {

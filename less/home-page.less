@@ -15,6 +15,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      width: 100%;
+    }
+
    
     
     .text-content {
@@ -22,7 +26,7 @@
       padding-right: 1%;
 
       @media @phone {
-        width: 100%
+        width: 100%;
       }
     }
 
@@ -31,7 +35,7 @@
       padding-left: 1%;
 
       @media @phone {
-        width: 100%
+        width: 100%;
       }
 
       img {
@@ -53,6 +57,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @phone {
+      width: 100%;
+    }
   }
 
   .content-destination {
@@ -73,6 +81,7 @@
     @media @phone {
       justify-content: center;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .destination {
@@ -80,7 +89,7 @@
       margin-bottom: 30px;
 
       @media @phone {
-        width: 100%
+        width: 100%;
       }
     }
   }
